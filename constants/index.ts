@@ -21,6 +21,10 @@ export const menuLinks = [
 
 export const mobileMenuLinks = [
     {
+      label: 'Main',
+      route: '/',
+    },
+    {
       label: 'About',
       route: '/about',
     },
@@ -70,6 +74,12 @@ export const resourceData = [
     title: "Had Laundry Landing Page",
     price: 10,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -92,6 +102,12 @@ export const resourceData = [
     title: "Had Pizza Landing Page",
     price: 15,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -115,6 +131,12 @@ export const resourceData = [
     title: "Had Homeschooling Landing Page",
     price: 15,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -137,6 +159,12 @@ export const resourceData = [
     title: "Had Travel Landing Page",
     price: 20,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -162,6 +190,12 @@ export const resourceData = [
     title: "Had Coffee Landing Page",
     price: 20,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -186,6 +220,12 @@ export const resourceData = [
     title: "Had Portfolio Landing Page",
     price: 20,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -210,6 +250,12 @@ export const resourceData = [
     title: "Had Rent Car Landing Page",
     price: 20,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -234,6 +280,12 @@ export const resourceData = [
     title: "Had Grocery Landing Page",
     price: 25,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -258,6 +310,12 @@ export const resourceData = [
     title: "Had Beauty Care Landing Page",
     price: 40,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",
@@ -284,6 +342,12 @@ export const resourceData = [
     title: "Had Toy Store Landing Page",
     price: 50,
     desc: "A modern and stylish landing page for laundry services.",
+    included: [
+      "HTML File as templates.",
+      "CSS File and SCSS (Compiler File) as styles.",
+      "Javascript File as scripts.",
+      "All images used in this project."
+    ],
     features: [
       "Fully Responsive Layout",
       "Clean Code",

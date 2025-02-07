@@ -51,11 +51,6 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
-  		fontFamily: {
-  			archivo: [
-  				'var(--font-archivo)'
-  			],
-  		},
 		backgroundImage: {
 			'hero-gradient': "url('/assets/images/hero_gradient.png')",
 			'grid': "url('/assets/images/grid_bg.png')"
@@ -66,6 +61,11 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		keyframes: {
+			"fadeInOut": {
+				"0%": { opacity: "0.5" },
+				"50%": { opacity: "1" },
+				"100%": { opacity: "0.5" },
+			},
 			"infinite-scroll": {
 				"0%": { transform: "translateX(0)" },
 				"100%": { transform: "translateX(-120%)" }
@@ -76,6 +76,7 @@ export default {
 			},
 		},
 		animation: {
+			"fadeInOut": "fadeInOut 2.5s ease infinite",
 			"infinite-scroll": "infinite-scroll 10s linear infinite",
 			"shine": 'shine 5s linear infinite',
 		},
@@ -84,15 +85,22 @@ export default {
 		  '300': '3',
 		  '400': '4',
 		},
-		boxShadow:{
-
+		transitionDelay: {
+			'500': '500ms',
+			'1000': '1000ms',
+			'1500': '1500ms',
+			'2000': '2000ms',
 		},
 		borderWidth: {
-		DEFAULT: '1px',
-		'0.5': '0.5px',
-		'0.25': '0.25px',
-		'0.1': '0.1px',
-		'0.05': '0.05px',
+			DEFAULT: '1px',
+			'0.5': '0.5px',
+			'0.25': '0.25px',
+			'0.1': '0.1px',
+			'0.05': '0.05px',
+		},
+		screens: {
+			"xs": "30rem",
+			"xmd": "55rem",
 		}
   	}
   },

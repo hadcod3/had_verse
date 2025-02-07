@@ -6,7 +6,7 @@ import React from 'react'
 
 const ResourcePage = () => {
   return (
-    <div className='relative flex-center pt-32'>
+    <div className='relative flex-center pt-16 lg:pt-24'>
       <div className='wrapper'>
         <div className='text-center pb-10'>
           <h1 className='text-h4-bold'>Where Art Meets Code</h1>

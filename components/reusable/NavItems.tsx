@@ -2,7 +2,7 @@
 import { menuLinks } from '@/constants'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-import { ModeToggle } from '../ui/mode-toggle';
+import { ThemeToggle } from '../ui/mode-toggle';
 import { Button } from '../ui/button';
 import { PiSignIn } from 'react-icons/pi';
 import TransitionLink from './TransitionLink';
@@ -32,10 +32,7 @@ const NavItems = () => {
                 )
             })}
             <li className='flex-center gap-x-3'>
-                <Button size='icon' className='bg-gray-100/20 dark:bg-gray-500/20 text-black hover:bg-gray-300/50 dark:text-white dark:hover:bg-gray-500/50 outline-none focus:outline-none focus:border-none border-l-0.05 border-t-0.05 border-zinc-50/20'>
-                    <PiSignIn  />
-                </Button>
-                <ModeToggle/>
+                <ThemeToggle/>
             </li>
         </ul>
     )

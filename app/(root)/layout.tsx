@@ -2,6 +2,7 @@
 import Footer from "@/components/reusable/Footer";
 import Header from "@/components/reusable/Header";
 import MobileNavBar from "@/components/reusable/MobileNavBar";
+import { ThemeToggle } from "@/components/ui/mode-toggle";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -25,6 +26,9 @@ export default function RootLayout({
           {children}
       </main>
       <Footer/>
+      <div className="fixed bottom-5 right-5">
+        <ThemeToggle/>
+      </div>
     </div>
   );
 }

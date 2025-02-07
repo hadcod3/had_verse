@@ -5,6 +5,7 @@ export interface IProject {
     title: string;
     price: number;
     desc: string;
+    included: string[];
     features: string[];
     liveLink: string;
     purchaseLink: string;

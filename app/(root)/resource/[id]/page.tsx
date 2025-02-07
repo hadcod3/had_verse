@@ -14,7 +14,6 @@ import {
 import Contact from '@/components/reusable/Contact';
 import { Separator } from '@/components/ui/separator';
 import NotFoundPage from '@/components/reusable/NotFoundPage';
-import BlurText from '@/components/reusable/BlurText';
 
 const page = ({ params }: { params: Promise<{ id: string }> }) => {
     const [param, setParam] = React.useState<{ id: string } | null>(null);
@@ -39,7 +38,7 @@ const page = ({ params }: { params: Promise<{ id: string }> }) => {
     }
 
     return (
-        <div className='relative flex-center pt-32'>
+        <div className='relative flex-center pt-16 lg:pt-24'>
             <section className='flex-col flex w-[600px] p-5 gap-y-5'>
                 <TransitionLink href='back' className='flex items-center gap-x-3 opacity-80 hover:opacity-100 transition-all'>
                     <PiArrowLeftLight />Go back
@@ -50,7 +49,7 @@ const page = ({ params }: { params: Promise<{ id: string }> }) => {
                         Live Website<PiShareFatLight />
                     </Button>
                 </TransitionLink>
-                <div className='p-5 bg-zinc-200/50 dark:bg-zinc-800/50 shadow-inner border-0.05 rounded-xl my-10'>
+                <div className='sm:p-5 sm:bg-zinc-200/50 dark:bg-zinc-800/50 shadow-inner border-0.05 rounded-xl my-5 sm:my-10'>
                     <Image src={data.thumbImgUrl} alt='thumb_project' width={1000} height={1000} className='w-full aspect-video rounded-lg'/>
                 </div>
                 <div>
@@ -78,22 +77,15 @@ const page = ({ params }: { params: Promise<{ id: string }> }) => {
                 </div>
                 <div>
                     <h6 className='text-h6-bold mb-3'>Included in Package</h6>
-                    <Table>
-                        <TableBody>
-                            <TableRow>
-                            <TableCell>HTML File as templates.</TableCell>
-                            </TableRow>
-                            <TableRow>
-                            <TableCell>CSS File and SCSS (Compiler File) as styles.</TableCell>
-                            </TableRow>
-                            <TableRow>
-                            <TableCell>Javascript File as scripts.</TableCell>
-                            </TableRow>
-                            <TableRow>
-                            <TableCell>All images used in this project.</TableCell>
-                            </TableRow>
-                        </TableBody>
-                    </Table>
+                    <ul className='list-disc pl-4'>
+                    {data.included && data.included.length > 0 ? (
+                        data.included.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))
+                    ) : (
+                        <li>No included available</li>
+                    )}
+                    </ul>
                 </div>
                 <div>
                     <h6 className='text-h6-bold mb-3'>Features</h6>
@@ -113,12 +105,12 @@ const page = ({ params }: { params: Promise<{ id: string }> }) => {
                     <div className='w-full flex-between'>
                         <Button 
                             size={"lg"}
-                            className='font-archivo w-[49%] min-w-30' 
+                            className='w-[49%] min-w-30' 
                             onClick={() => window.open(data.purchaseLink)}>Purchase now</Button>
                         <Button 
                             size={"lg"}
                             variant={"outline"}
-                            className='font-archivo w-[49%] min-w-30' 
+                            className='w-[49%] min-w-30' 
                             onClick={() => window.open(data.playlistLink)}>Build it now</Button>
                     </div>
                 </div>

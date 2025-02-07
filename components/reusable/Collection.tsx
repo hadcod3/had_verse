@@ -17,7 +17,7 @@ const Collection = ({isSample, collectionType} : CollectionProps) => {
     return (
         <div className='w-full flex-center'>
             <div className='w-fit flex flex-col gap-y-10'>
-                <div className='w-[400px]'>
+                <div className='w-full xs:w-[400px]'>
                     <h4 className='text-h4-bold mb-2'>{collectionType === "Project" ? "Stunning web landing page templates" : "Design convert into stories from the web"}</h4>
                     <p className='text-subtitle'>{collectionType === "Project" ? "HTML, CSS, JavaScript Projects" : "Dive deep into trends that define the modern web"}</p>
                 </div>
@@ -33,7 +33,7 @@ const Collection = ({isSample, collectionType} : CollectionProps) => {
                     )}
                 </div>
                 <TransitionLink href={(collectionType === "Project" ? "/resource" : "/blog")} className='w-full flex justify-center'>
-                    <Button variant='outline' className='btn-large w-fit font-archivo'>Discover <PiArrowUpRight /></Button>
+                    <Button variant='outline' className='btn-large w-fit'>Discover <PiArrowUpRight /></Button>
                 </TransitionLink>
             </div>
         </div>

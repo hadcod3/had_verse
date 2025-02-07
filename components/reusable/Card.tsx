@@ -8,6 +8,8 @@ import {
     PiBookmarkSimpleLight, 
     PiCaretRight, 
     PiChatTextLight, 
+    PiCirclesThreePlus, 
+    PiNumberFourLight, 
     PiShareNetworkLight, 
     PiThumbsDownLight, 
     PiThumbsUpLight 
@@ -49,7 +51,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                                         </div>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                    <p className='font-archivo'>Like</p>
+                                    <p>Like</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -62,7 +64,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                                         </div>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                    <p className='font-archivo'>Dislike</p>
+                                    <p>Dislike</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -77,7 +79,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                                         </div>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                    <p className='font-archivo'>Comments</p>
+                                    <p>Comments</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -93,7 +95,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                                         </div>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                    <p className='font-archivo'>Bookmark</p>
+                                    <p>Bookmark</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -108,7 +110,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                                     </div>
                                 </TooltipTrigger>
                                 <TooltipContent>
-                                <p className='font-archivo'>Share</p>
+                                <p>Share</p>
                                 </TooltipContent>
                             </Tooltip>
                         </TooltipProvider>
@@ -116,14 +118,14 @@ const CardTemplate = ({type, data} : CardProps) => {
                 </div>
             </div>
         ) : type === "carousel" ? (
-            <motion.div key={data._id} className='relative flex-center min-w-96 w-96 rounded-lg bg-gray-100/30 dark:bg-gray-500/30 p-5 border-t-0.1 border-l-0.1 border-b-0.05 border-r-0.05 border-white/30 overflow-hidden shadow-lg backdrop-blur-sm hover:cursor-pointer'>
-                <div className='relative p-3 hover:p-0 bg-gray-50/30 rounded-md border-t-0.1 border-l-0.1 border-b-0.05 border-r-0.05 border-white/30 shadow-md transition-all ease-in'>
+            <motion.div key={data._id} className='relative flex-center min-w-60 sm:min-w-96 w-6min-w-60 sm:w-96 rounded-lg bg-gray-100/30 dark:bg-gray-500/30 p-3 sm:p-5 border-t-0.1 border-l-0.1 border-b-0.05 border-r-0.05 border-white/30 overflow-hidden shadow-lg backdrop-blur-sm hover:cursor-pointer'>
+                <div className='relative p-2 sm:p-3 hover:p-0 bg-gray-50/30 rounded-md border-t-0.1 border-l-0.1 border-b-0.05 border-r-0.05 border-white/30 shadow-md transition-all ease-in'>
                     <Image alt='' src={(data as ICarousel).imgUrl} width={1000} height={1000} className='absolute top-0 left-0 w-full h-full -z-10 blur-md opacity-70'/>
                     <Image alt='' src={(data as ICarousel).imgUrl} width={1000} height={1000} className='aspect-video rounded-sm'/>
                 </div>
             </motion.div>
         ) : type === "smallProject" ?(
-            <div key={data._id} className='w-[350px] h-fit bg-gray-400/10 border-t-0.1 border-l-0.1 border-r-0.05 border-b-0.05 border-gray-400/20 dark:border-white/30 rounded-2xl overflow-hidden shadow-md'>
+            <div key={data._id} className='w-[320px] xs:w-[350px] h-fit bg-gray-400/10 border-t-0.1 border-l-0.1 border-r-0.05 border-b-0.05 border-gray-400/20 dark:border-white/30 rounded-xl overflow-hidden shadow-md'>
                 <TransitionLink href={`/resource/${(data as IProject)._id}`} className="w-full h-40 object-cover object-center bg-red-400">
                     <Image alt=""src={(data as IProject).thumbImgUrl} width={2000} height={1000} className="w-full h-full bg-gray-50/10 object-cover object-center"/>
                 </TransitionLink>
@@ -131,7 +133,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                     <h6 className='text-body-2'>{(data as IProject).title}</h6>
                     <p className='text-body-1'>{`$${(data as IProject).price} USD`}</p>
                     <p className='text-shadow line-clamp-1'>{(data as IProject).desc}</p>
-                    <Button className='btn-thin font-archivo' onClick={() => window.open((data as IProject).purchaseLink)}>Purchase now</Button>
+                    <Button className='btn-thin' onClick={() => window.open((data as IProject).purchaseLink)}>Purchase now</Button>
                 </div>
             </div>
         ) : type === "mediumProject" ? (
@@ -143,24 +145,25 @@ const CardTemplate = ({type, data} : CardProps) => {
                     <h6 className='text-h6-bold line-clamp-1'>{(data as IProject).title}</h6>
                     <p className='text-shadow line-clamp-3'>{(data as IProject).desc}</p>
                     <TransitionLink href={`/resource/${(data as IProject)._id}`}>
-                        <Button variant={"ghost"} className='w-fit border font-archivo '>View Project<PiCaretRight size={20} /></Button>
+                        <Button variant={"ghost"} className='w-fit border'>View Project<PiCaretRight size={20} /></Button>
                     </TransitionLink>
                 </div>
             </div>
         ) : type === "bigProject" ? (
-            <TransitionLink href={`/resource/${data._id}`} className='max-w-[45%] h-fit' key={data._id}>
+            <TransitionLink href={`/resource/${data._id}`} className='max-w-full xmd:max-w-[47%] lg:max-w-[45%] h-fit' key={data._id}>
                 <Image alt="resource_thumb" src={(data as IProject).posterImgUrl} width={1000} height={1000} className="w-full rounded-3xl border-0.05"/>
                 <div className='flex-between pt-4'>
                   <div className='flex-center gap-x-3'>
-                    <h6 className='text-body-2-bold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-all'>{(data as IProject).title}</h6>
+                    <h6 className='text-body-2-bold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-all line-clamp-1'>{(data as IProject).title}</h6>
                     <div className='flex-center gap-x-1'>
-                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 '><FaHtml5 size={16} color='#ff5733'/></TransitionLink>
-                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 '><FaCss3Alt size={16} color='#264de4'/></TransitionLink>
-                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 '><FaSquareJs size={16} color='#f7df1e'/></TransitionLink>
-                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 '><FaSass size={16} color='#c69'/></TransitionLink>
+                      <TransitionLink href='/' className='p-1 rounded-md border-0.05'><FaHtml5 size={16} color='#ff5733'/></TransitionLink>
+                      <div className='p-1 rounded-md border-0.05 block lg:hidden'><PiCirclesThreePlus size={16} color='#0d9488'/></div>
+                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 hidden lg:block'><FaCss3Alt size={16} color='#264de4'/></TransitionLink>
+                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 hidden lg:block'><FaSquareJs size={16} color='#f7df1e'/></TransitionLink>
+                      <TransitionLink href='/' className='p-1 rounded-md border-0.05 hidden lg:block'><FaSass size={16} color='#c69'/></TransitionLink>
                     </div>
                   </div>
-                  <h6 className='text-body-1'>{`$${(data as IProject).price} USD`}</h6>
+                  <h6 className='text-body-1 min-w-20 text-end'>{`$${(data as IProject).price} USD`}</h6>
                 </div>
             </TransitionLink>
         ) : (

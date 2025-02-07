@@ -4,6 +4,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import TransitionLink from './TransitionLink';
 import { gsap } from 'gsap';
 import { useGSAP } from "@gsap/react";
+import { PiSignIn } from 'react-icons/pi';
+import { ThemeToggle } from '../ui/mode-toggle';
+import { Button } from '../ui/button';
 
 const MobileNavBar = () => {
     const container = useRef(null);
@@ -46,16 +49,18 @@ const MobileNavBar = () => {
                 <div className='w-screen p-4 px-6 flex items-center justify-end'>
                     <div className='text-h6 cursor-pointer' onClick={toggleMenu}>Close</div>
                 </div>
-                <div className='p-20'>
-                    {mobileMenuLinks.map((link, index) => (
-                        <div key={index}>
-                            <div className='clipGsap'> 
-                                <TransitionLink href={link.route} className='menu-link-item-holder relative'>
-                                    <div onClick={toggleMenu} className='text-h1 '>{link.label}</div>
-                                </TransitionLink>
+                <div className='h-screen flex items-center sm:items-start'>
+                    <div className='p-5 sm:p-20'>
+                        {mobileMenuLinks.map((link, index) => (
+                            <div key={index}>
+                                <div className='clipGsap'> 
+                                    <TransitionLink href={link.route} className='menu-link-item-holder relative'>
+                                        <div onClick={toggleMenu} className='text-h1 '>{link.label}</div>
+                                    </TransitionLink>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
