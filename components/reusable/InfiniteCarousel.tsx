@@ -5,7 +5,7 @@ import { animate, useMotionValue, motion } from 'motion/react'
 import CardTemplate from './Card'
 
 const InfiniteCarousel = () => {
-  let [ref, {width}] = useMeasure()
+  const [ref, {width}] = useMeasure()
   const xTranslation = useMotionValue(0)
 
   const TOP_SPEED = 300
@@ -17,7 +17,7 @@ const InfiniteCarousel = () => {
 
   useEffect(() => {
     let controls;
-    let finalPosition = -width / 2 - 20
+    const finalPosition = -width / 2 - 20
 
     if (mustFinish) {
       controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
@@ -39,7 +39,7 @@ const InfiniteCarousel = () => {
     }
 
     return controls.stop
-  }, [xTranslation, width, duration, rerender])
+  }, [xTranslation, width, duration, rerender, mustFinish])
 
   return (
     <div className='w-screen overflow-hidden'>

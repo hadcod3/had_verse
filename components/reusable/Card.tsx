@@ -9,7 +9,6 @@ import {
     PiCaretRight, 
     PiChatTextLight, 
     PiCirclesThreePlus, 
-    PiNumberFourLight, 
     PiShareNetworkLight, 
     PiThumbsDownLight, 
     PiThumbsUpLight 

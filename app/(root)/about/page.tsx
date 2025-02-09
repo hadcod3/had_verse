@@ -5,9 +5,7 @@ import gsap from 'gsap';
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from '@/components/ui/separator'
 import { Button } from '@/components/ui/button'
-import { PiArrowUpRight, PiCaretRight } from 'react-icons/pi'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+import { PiArrowUpRight } from 'react-icons/pi'
 import InfiniteCarousel from '@/components/reusable/InfiniteCarousel';
 import TransitionLink from '@/components/reusable/TransitionLink';
 import { resourceData } from '@/constants';
@@ -93,13 +91,10 @@ const AboutPage = () => {
                     direction="bottom"
                     className="text-h4-bold"
                     />
-                    <BlurText
-                    text={`Creating seamless web experiences and captivating designs that blend functionality with creativity. As a web programmer and designer, I transform ideas into user-friendly solutions while staying inspired by evolving trends and innovative techniques.`}
-                    animateBy="words"
-                    direction="bottom"
-                    className="opacity-70"
-                    />
-                    <div className='bg-gray-300/40 dark:bg-gray-300/10 py-2 px-5 w-fit rounded-lg flex-center gap-x-3' data-aos="fade-up" data-aos-delay="2000">
+                    <p data-aos="fade-up" data-aos-delay="500" className='opacity-70'>
+                    Creating seamless web experiences and captivating designs that blend functionality with creativity. As a web programmer and designer, I transform ideas into user-friendly solutions while staying inspired by evolving trends and innovative techniques.
+                    </p>
+                    <div className='bg-gray-300/40 dark:bg-gray-300/10 py-2 px-5 w-fit rounded-lg flex-center gap-x-3' data-aos="fade-up" data-aos-delay="700">
                         <div className='relative flex-center'>
                             <div className='absolute w-2 h-2 rounded-full bg-teal-600 dark:bg-teal-400'></div>
                             <div className='absolute w-2 h-2 rounded-full bg-teal-600 dark:bg-teal-400 animate-ping'></div>
@@ -110,8 +105,8 @@ const AboutPage = () => {
             </div>
             <div className='w-screen'>
                 <div className='relative flex justify-center w-full h-fit py-10 sm:py-20'>
-                    <Image alt="" src={"/assets/images/inside_box_illu.png"} width={5000} height={5000} className="absolute h-full min-w-[900px] sm:min-w-[1600px] top-0 dark:invert rotate-180 dark:opacity-60" />
-                    <Image alt="" src={"/assets/images/inside_box_illu.png"} width={5000} height={5000} className="absolute h-full min-w-[900px] sm:min-w-[1600px] top-0 dark:invert rotate-180 blur-sm opacity-40 hidden dark:block" />
+                    <Image alt="" src={"/assets/images/inside_box_illu.png"} width={5000} height={5000} className="absolute h-full min-w-[900px] sm:min-w-[1800px] top-0 dark:invert rotate-180 dark:opacity-60" />
+                    <Image alt="" src={"/assets/images/inside_box_illu.png"} width={5000} height={5000} className="absolute h-full min-w-[900px] sm:min-w-[1800px] top-0 dark:invert rotate-180 blur-sm opacity-40 hidden dark:block" />
                     <div ref={gsap2Ref}><div className='opacity-0'><InfiniteCarousel/></div></div>
                     <div className='absolute flex flex-col -z-20 top-0 w-screen h-full'>
                         <div className='w-full h-10 sm:h-20 bg-gradient-to-b from-transparent to-gray-300 dark:to-black'/>
@@ -123,7 +118,7 @@ const AboutPage = () => {
             <div className="max-w-[600px] p-5">
                 <div className='py-5'>
                     <h4 className='text-h6-bold pb-3'>About</h4>
-                    <p className='opacity-70'>I’m Mia Carter, a curious designer, coder, and storyteller. Currently a student at Springfield High School, but always exploring the limitless possibilities of creativity and technology. I thrive on transforming ideas into reality, whether it's crafting digital interfaces, designing immersive visuals, or building websites that feel effortless to use.</p>
+                    <p className='opacity-70'>I&lsquo;m Mia Carter, a curious designer, coder, and storyteller. Currently a student at Springfield High School, but always exploring the limitless possibilities of creativity and technology. I thrive on transforming ideas into reality, whether it&lsquo;s crafting digital interfaces, designing immersive visuals, or building websites that feel effortless to use.</p>
                 </div>
                 <Separator/>
                 <div className='py-5'>
@@ -149,7 +144,7 @@ const AboutPage = () => {
                     <Image alt='' src={"/assets/images/bg_grid.png"} width={2000} height={2000} className='absolute hidden sm:block top-32 w-full dark:invert dark:opacity-50 -z-30'/>
                     <div className='flex flex-col items-center gap-y-3 pb-5'>
                         <h6 className='text-h6-bold text-center' >How Can I Help?</h6>
-                        <p className='text-center max-w-64 opacity-70'>Let's transform your imagination into something delightful.</p>
+                        <p className='text-center max-w-64 opacity-70'>Let&lsquo;s transform your imagination into something delightful.</p>
                     </div>
                     <div className='sm:p-5 flex-center flex-wrap gap-2'>
                         <Card className='w-full sm:w-[49%]'>

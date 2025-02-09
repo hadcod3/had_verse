@@ -3,8 +3,6 @@ import { menuLinks } from '@/constants'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import { ThemeToggle } from '../ui/mode-toggle';
-import { Button } from '../ui/button';
-import { PiSignIn } from 'react-icons/pi';
 import TransitionLink from './TransitionLink';
 
 const NavItems = () => {

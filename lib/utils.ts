@@ -32,7 +32,7 @@ export const animatePageOut = (href: string, router: AppRouterInstance) => {
       yPercent: 0,
       stagger: 0.05,
       onComplete: () => {
-        router.refresh;
+        router.refresh();
         router.push(href);
       },
     });

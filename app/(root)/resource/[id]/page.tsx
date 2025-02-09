@@ -15,7 +15,7 @@ import Contact from '@/components/reusable/Contact';
 import { Separator } from '@/components/ui/separator';
 import NotFoundPage from '@/components/reusable/NotFoundPage';
 
-const page = ({ params }: { params: Promise<{ id: string }> }) => {
+const Page = ({ params }: { params: Promise<{ id: string }> }) => {
     const [param, setParam] = React.useState<{ id: string } | null>(null);
   
     React.useEffect(() => {
@@ -100,7 +100,7 @@ const page = ({ params }: { params: Promise<{ id: string }> }) => {
                     </ul>
                 </div>
                 <div className='flex flex-col gap-y-3 pb-4'>
-                    <h6 className='text-h6-bold'>What's your plan?</h6>
+                    <h6 className='text-h6-bold'>What&lsquo;s your plan?</h6>
                     <p>Short on cash for the template? No stress! Dive into my YouTube video for step-by-step guidance and build it like a pro.</p>
                     <div className='w-full flex-between'>
                         <Button 
@@ -123,4 +123,4 @@ const page = ({ params }: { params: Promise<{ id: string }> }) => {
     )
 }
 
-export default page
+export default Page

@@ -1,5 +1,5 @@
 import React from 'react'
-import { PiArrowBendDownLeftLight, PiArrowBendDownRightLight, PiArrowBendUpLeftLight, PiArrowBendUpRightLight, PiFirstAidLight, PiFlowArrowLight, PiGithubLogoLight, PiGitMergeLight } from 'react-icons/pi'
+import { PiFirstAidLight, PiGithubLogoLight } from 'react-icons/pi'
 
 const ArrowSeparator = () => {
   return (
