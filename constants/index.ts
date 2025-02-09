@@ -72,8 +72,8 @@ export const resourceData = [
     posterImgUrl: "/assets/images/resource_thumb/laundry_rsc.png",
     thumbImgUrl: "/assets/images/thumb/thumb_laundry.png",
     title: "Had Laundry Landing Page",
-    price: 10,
-    desc: "A modern and stylish landing page for laundry services.",
+    price: 0,
+    desc: "A sleek and professional landing page designed for modern laundry businesses. Clean, responsive, and easy to navigate.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -101,7 +101,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_pizza-store.png",
     title: "Had Pizza Landing Page",
     price: 15,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "An eye-catching and interactive landing page tailored for pizzerias, featuring a stylish menu and seamless navigation.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -130,7 +130,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_homeschooling.png",
     title: "Had Homeschooling Landing Page",
     price: 15,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A warm and inviting landing page for homeschooling programs, designed to highlight courses, testimonials, and sign-ups.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -158,7 +158,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_travel.png",
     title: "Had Travel Landing Page",
     price: 20,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A visually stunning landing page for travel agencies, showcasing destinations, pricing, and an easy-to-use booking system.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -189,7 +189,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_coffee-shop.png",
     title: "Had Coffee Landing Page",
     price: 20,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A rich and elegant landing page for coffee shops, featuring a premium aesthetic and a menu section with a modern touch.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -219,7 +219,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_portfolio.png",
     title: "Had Portfolio Landing Page",
     price: 20,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A sleek and modern personal portfolio landing page, perfect for showcasing work, projects, and creative skills.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -249,7 +249,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_rent-car.png",
     title: "Had Rent Car Landing Page",
     price: 20,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A high-converting landing page for car rental services, with an intuitive design and seamless booking functionality.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -279,7 +279,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_grocery.png",
     title: "Had Grocery Landing Page",
     price: 25,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A clean and efficient landing page for grocery stores, featuring an interactive shopping cart system for online purchases.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -309,7 +309,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_beauty-care.png",
     title: "Had Beauty Care Landing Page",
     price: 40,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A luxurious and sophisticated landing page for beauty salons and skincare brands, with an elegant and feminine design.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",
@@ -341,7 +341,7 @@ export const resourceData = [
     thumbImgUrl: "/assets/images/thumb/thumb_toy-store.png",
     title: "Had Toy Store Landing Page",
     price: 50,
-    desc: "A modern and stylish landing page for laundry services.",
+    desc: "A fun and colorful landing page for toy stores, featuring an engaging layout and a playful shopping experience.",
     included: [
       "HTML File as templates.",
       "CSS File and SCSS (Compiler File) as styles.",

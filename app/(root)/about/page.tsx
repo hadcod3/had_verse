@@ -118,7 +118,9 @@ const AboutPage = () => {
             <div className="max-w-[600px] p-5">
                 <div className='py-5'>
                     <h4 className='text-h6-bold pb-3'>About</h4>
-                    <p className='opacity-70'>I&lsquo;m Mia Carter, a curious designer, coder, and storyteller. Currently a student at Springfield High School, but always exploring the limitless possibilities of creativity and technology. I thrive on transforming ideas into reality, whether it&lsquo;s crafting digital interfaces, designing immersive visuals, or building websites that feel effortless to use.</p>
+                    <p className='opacity-70'>
+                    I&lsquo;m Hadi—a designer and web developer with an insatiable curiosity. Currently studying at the Yogyakarta University of Technology, I&lsquo;m always exploring the intersection of creativity and technology. I love bringing ideas to life—whether through sleek digital interfaces, immersive visuals, or seamless web experiences. For me, design isn&lsquo;t just about aesthetics—it&lsquo;s about crafting interactions that feel effortless, engaging, and meaningful. 🚀
+                    </p>
                 </div>
                 <Separator/>
                 <div className='py-5'>

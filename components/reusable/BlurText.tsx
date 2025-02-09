@@ -47,10 +47,13 @@ const BlurText: React.FC<BlurTextProps> = ({
       {elements.map((char, index) => (
         <span
           key={index}
-          className={`inline-block transition-all duration-700 ease-out opacity-0 blur-sm ${
-            inView ? "opacity-100 blur-0 translate-y-0" : direction === "top" ? "-translate-y-5" : "translate-y-5"
+          className={`inline-block transition-all duration-700 ease-out opacity-0 ${
+            inView ? "opacity-100 translate-y-0" : direction === "top" ? "-translate-y-5" : "translate-y-5"
           }`}
-          style={{ transitionDelay: `${index * delay}ms` }}
+          style={{
+            transitionDelay: `${index * delay}ms`,
+            filter: inView ? "blur(0px)" : "blur(8px)",
+          }}
         >
           {char === " " ? "\u00A0" : char}
           {animateBy === "words" && index < elements.length - 1 && "\u00A0"}

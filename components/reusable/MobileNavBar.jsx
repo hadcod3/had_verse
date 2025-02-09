@@ -4,9 +4,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import TransitionLink from './TransitionLink';
 import { gsap } from 'gsap';
 import { useGSAP } from "@gsap/react";
-import { PiSignIn } from 'react-icons/pi';
-import { ThemeToggle } from '../ui/mode-toggle';
-import { Button } from '../ui/button';
 
 const MobileNavBar = () => {
     const container = useRef(null);

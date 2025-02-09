@@ -129,8 +129,10 @@ const CardTemplate = ({type, data} : CardProps) => {
                     <Image alt=""src={(data as IProject).thumbImgUrl} width={2000} height={1000} className="w-full h-full bg-gray-50/10 object-cover object-center"/>
                 </TransitionLink>
                 <div className='p-3 flex flex-col gap-y-1'>
-                    <h6 className='text-body-2'>{(data as IProject).title}</h6>
-                    <p className='text-body-1'>{`$${(data as IProject).price} USD`}</p>
+                    <h6 className='text-body-2 line-clamp-1'>{(data as IProject).title}</h6>
+                    <p className='text-body-1'>
+                        {(data as IProject).price === 0 ? "Free" : `$${(data as IProject).price} USD`}
+                    </p>
                     <p className='text-shadow line-clamp-1'>{(data as IProject).desc}</p>
                     <Button className='btn-thin' onClick={() => window.open((data as IProject).purchaseLink)}>Purchase now</Button>
                 </div>
@@ -162,7 +164,7 @@ const CardTemplate = ({type, data} : CardProps) => {
                       <TransitionLink href='/' className='p-1 rounded-md border-0.05 hidden lg:block'><FaSass size={16} color='#c69'/></TransitionLink>
                     </div>
                   </div>
-                  <h6 className='text-body-1 min-w-20 text-end'>{`$${(data as IProject).price} USD`}</h6>
+                  <h6 className='text-body-1 min-w-20 text-end'>{(data as IProject).price === 0 ? "Free" : `$${(data as IProject).price} USD`}</h6>
                 </div>
             </TransitionLink>
         ) : (
