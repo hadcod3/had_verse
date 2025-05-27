@@ -25,7 +25,6 @@ export default function RootLayout({
       <main className="flex-1 w-full">
           {children}
       </main>
-      <Footer/>
       <div className="fixed md:hidden bottom-5 right-5">
         <ThemeToggle/>
       </div>

@@ -2,8 +2,8 @@ import { title } from "process"
 
 export const menuLinks = [
     {
-      label: 'Blog',
-      route: '/blog',
+      label: 'UI Space',
+      route: '/uispace',
     },
     {
       label: 'References',
@@ -29,8 +29,8 @@ export const mobileMenuLinks = [
       route: '/about',
     },
     {
-      label: 'Blog',
-      route: '/blog',
+      label: 'UI Space',
+      route: '/uispace',
     },
     {
       label: 'References',
